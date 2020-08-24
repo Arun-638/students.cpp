@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+class students {
+    public: 
+    string Name; 
+    double marks;
+    void enter(){
+    	cout<<"\nENTER A NAME : "; //Output for name of first PERSON
+    	cin>>Name; // INPUT FOR FIRST PERSON'S NAME
+    	cout<<"\nENTER THE MARKS : ";  //OUTPUT FOR MARKS OF FIRST PERSON
+    	cin>>marks; // INPUT FOR THE MARKS
+	}
+    void enter1(){
+	    cout<<"\nENTER ANOTHER NAME : "; //Output for name of second's PERSON
+    	cin>>Name; // INPUT FOR SECOND PERSON'S NAME
+    	cout<<"\nENTER THE MARKS  : "; //OUTPUT FOR MARKS OF SECOND PERSON
+    	cin>>marks;	// INPUT FOR THE MARKS
+	}
+    
+};
+   int main(){
+cout<<"\tMARKS\n\t-----\n";   	
+students student1;
+student1.enter();
+students student2;
+student2.enter1();
+
+ if (student1.marks < student2.marks){
+    cout<<"\n"<<student1.Name<<"'s  MARK ARE LESS THAN "<<student2.Name<<"'s MARK\n\n";
+ }
+ else if (student1.marks > student2.marks)
+{
+    cout<<"\n"<<student1.Name<<"'s  MARK ARE GREATER THAN <<student2.Name<<'s MARK\n\n;
+}
+else if (student1.marks = student2.marks) {
+count<<"\n"<<"BOTH HAVE SAME MARK\n\n";
+}
