@@ -35,3 +35,5 @@ student2.enter1();
 else if (student1.marks = student2.marks) {
 count<<"\n"<<"BOTH HAVE SAME MARK\n\n";
 }
+return 0;
+}
